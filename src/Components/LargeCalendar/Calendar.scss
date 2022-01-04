@@ -1,0 +1,28 @@
+.calendar {
+    & .container {
+        padding-left: .25rem;
+        padding-right: .25rem;
+    }
+
+    & .row {
+        padding: 0;
+        margin-left: 0;
+        margin-right: 0;
+        min-height: 1rem;
+    }
+
+    & .col {
+        margin: 1px;
+        padding: 0;
+        min-width: calc(100% / 7 - 2px);
+        max-width: calc(100% / 7 - 2px);
+    }
+
+    & .card-header {
+        height: 100%;
+        max-width: 100%;
+        border: 1px solid rgba(0, 0, 0, .125);
+        padding: .2rem 1rem;
+        text-align: center;
+    }
+}
