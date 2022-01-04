@@ -7,9 +7,13 @@ import 'mdb-react-ui-kit/dist/css/mdb.min.css'
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import { DateContextProvider } from './Context/DateCtx';
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <DateContextProvider>
+      <App />
+    </DateContextProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
