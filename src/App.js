@@ -1,16 +1,21 @@
+import { MDBCol, MDBContainer, MDBRow } from "mdb-react-ui-kit";
 import React from "react";
-import './App.css';
-import Calendar from "./Components/LargeCalendar/Calendar";
-
+import "./App.css";
+import LgCalendar from "./Components/LargeCalendar/CalendarLg";
+import Sidebar from "./Components/Sidebar/Sidebar";
 
 function App() {
-
   return (
-    <div>
-      <header>
-        <Calendar></Calendar>
-      </header>
-    </div>
+    <MDBContainer breakpoint="xxl">
+      <MDBRow>
+        <MDBCol size='2'>
+          <Sidebar/>
+        </MDBCol>
+        <MDBCol size='10'>
+          <LgCalendar/>
+        </MDBCol>
+      </MDBRow>
+    </MDBContainer>
   );
 }
 
