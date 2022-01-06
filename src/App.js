@@ -1,6 +1,6 @@
 import { MDBCol, MDBContainer, MDBRow } from "mdb-react-ui-kit";
 import React from "react";
-import "./App.css";
+import "./App.scss";
 import LgCalendar from "./Components/LargeCalendar/CalendarLg";
 import Sidebar from "./Components/Sidebar/Sidebar";
 
