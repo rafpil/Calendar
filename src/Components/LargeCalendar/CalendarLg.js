@@ -2,12 +2,12 @@ import React, { useContext } from "react";
 import DateContext from "../../Context/DateCtx";
 
 import { MDBContainer, MDBRow, MDBCol } from "mdb-react-ui-kit";
-import Header from "./Header/Header";
-import DayCard from "./DayCard/DayCard";
+import Header from "./HeaderLg/HeaderLg";
+import DayCard from "./DayCardLg/DayCardLg";
 
-import "./Calendar.scss";
+import "./CalendarLg.scss";
 
-const Calendar = () => {
+const CalendarLg = () => {
   const ctx = useContext(DateContext);
 
   return (
@@ -28,4 +28,4 @@ const Calendar = () => {
   );
 };
 
-export default Calendar;
+export default CalendarLg;
