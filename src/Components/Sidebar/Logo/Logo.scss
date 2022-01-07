@@ -1,0 +1,52 @@
+.logo {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+    width: 100%;
+
+    & .logo-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        position: relative;
+        background-color: #00B74A;
+        border-radius: 50%;
+        height: 5rem;
+        width: 5rem;
+        color: white;
+
+        & span {
+            height: 5.3rem;
+            position: absolute;
+            width: 20px;
+            left: calc(50% - 10px);
+            top: calc(50% - 2.5rem);
+            color: rgb(8, 8, 8);
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            transform-origin: center;
+            color: white;
+            font-weight: 600;
+            
+            &.upChar1 {
+                align-items: flex-start;
+                transform: rotate(-20deg);
+            }
+
+            &.upChar2 {
+                align-items: flex-start;
+                transform: rotate(20deg);
+            }
+
+            @for $i from 1 through 8 {
+                &.downChar#{$i} {
+                    transform: rotate(90 - ($i - 1)*25.7 + deg);
+                }
+            }
+
+        }
+    }
+}
